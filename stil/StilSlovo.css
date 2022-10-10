@@ -1,0 +1,23 @@
+
+BODY,table  {font-family :  "Arial", sans-serif;  FONT-SIZE: 13px; }
+ 
+A:link  {
+ 	color : darkblue;
+ 	text-decoration : underline;
+ 	font-family :  "Arial", sans-serif;FONT-SIZE: 13px; 
+ }
+ 
+ A:visited  {
+ 	color :  #7070a0;
+ 	text-decoration : underline;
+ 	font-family :  "Arial", sans-serif;FONT-SIZE: 13px;
+ }
+ 
+ A:hover  {
+ 	color : brown;
+ 	text-decoration : underline;
+ 	font-family :  "Arial", sans-serif;FONT-SIZE: 13px;
+ }
+
+.NNc {FONT-SIZE: 11px; FONT-STYLE: normal; color : brown; FONT-WEIGHT: normal; FONT-FAMILY: "Arial", sans-serif;}
+.NNI {FONT-SIZE: 13px; FONT-STYLE: normal;  FONT-FAMILY: "Arial", sans-serif;}

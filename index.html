@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;">
+  <title>Sportski leksikon – tražilica</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified JavaScript -->
+  <link rel="stylesheet" href="bulma/css/bulma.min.css">
+  <link title=style href="stil/tekst.css" type=text/css rel=stylesheet>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://use.fontawesome.com/2d5bc62cc3.js"></script>
+</head>
+<body>
+  <section class="hero is-info">
+    <div class="hero-body">
+      <div class="container">
+        <p class="title" id="vrh">
+          Sportski leksikon – tražilica
+        </p>
+        <p class="subtitle">
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="content">
+      <!--<nav class="navbar " role="navigation">
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Članci
+              </a>
+
+              <div class="navbar-dropdown ajde">
+                <a class="navbar-item" href="naslovi/indeksabc.html">
+                  Naslovi
+                </a>
+                <a class="navbar-item" href="odgovornosti/indeksabc.html">
+                  Autori
+                </a>
+                <div class="nested navbar-item dropdown">
+
+                  <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span>Sadržajne odrednice</span>    
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a href="prmosb/indeksabc.html" class="dropdown-item">
+                        Osobna imena
+                      </a>
+                      <a class="dropdown-item" href="prmkrp/indeksabc.html">
+                        Korporativni nazivi
+                      </a>
+                      <a href="prmzmp/indeksabc.html" class="dropdown-item">
+                        Zemljopisne odrednice
+                      </a>
+                      <a href="predmet/indeksabc.html" class="dropdown-item">
+                        Tematske odrednice
+                      </a>
+                      <a href="prmdjl/indeksabc.html" class="dropdown-item">
+                        Djela
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Djela u prikazima
+              </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="knjige/indeksabc.html">
+                  Naslovi
+                </a>
+                <a class="navbar-item" href="knjigeaut/indeksabc.html">
+                  Autori
+                </a>
+
+              </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Knjižnica Hrvatske Revije
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="knjiz/indeksabc.html">
+                  Naslovi
+                </a>
+                <a class="navbar-item" href="knjizaut/indeksabc.html">
+                  Autori
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>-->
+<p></p>
+      <form action="https://duckduckgo.com/" method="get" id="form-search" class="field has-addons">
+       <!-- <div class="select">
+          <select id="odabir">
+            <option value="Naslov">Naslov</option>
+            <option value="Autor">Autor</option>
+          </select>
+        </div>-->
+        <div class="control is-expanded autocomplete">
+          <input class="input" type="text" type="text" name="q" id="input-search" placeholder="Pretraži leksikon" autocomplete="off">
+          <input type="hidden" name="sites" value="http://hrevija.lzmk.hr/">
+        </div>
+        <div class="control">
+          <button class="button is-info">
+            
+              <span class="icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+
+
+              </span>
+            
+            </span>
+
+          </button>
+        </div>
+
+      </form>
+      <ul class="kazalo"><a>A</a><a>B</a><a>C</a><a>Č</a><a>Ć</a><a>D</a><a>E</a><a>F</a><a>G</a><a>H</a><a>I</a><a>J</a><a>K</a><a>L</a><a>M</a><a>N</a><a>O</a><a>P</a><a>Q</a><a>R</a><a>S</a><a>Š</a><a>T</a><a>U</a><a >V</a><a>W</a><a>Y</a><a>Z</a><a>Ž</a><a>-</a></ul>
+
+      <div id="search-status" role="status"></div>
+      <ul id="search-results"><p style="text-align: center;">
+            </ul>
+            <div class="back-to-top-wrapper"><a href="#vrh" class="back-to-top-link" aria-label="Scroll to Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
+  </div></div>
+
+  <!-- Mirrored from hrevija.lzmk.hr/web/HR/katknj.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 May 2022 16:38:14 GMT -->
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+
+      <p><a href="https://www.lzmk.hr/"><img src="logo.png" style="margin: auto;" /></a></p>
+      <p>
+
+        ©
+        <script>document.write(new Date().getFullYear())</script> Leksikografski zavod Miroslav Krleža. Sva prava
+        pridržana.
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="index.js">
+ 
+</script>
+
+</html>

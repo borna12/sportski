@@ -1,0 +1,29 @@
+
+BODY,table  {font-family :  "Arial", sans-serif; FONT-SIZE: 13px;
+
+SCROLLBAR-FACE-COLOR: #ffffff;
+SCROLLBAR-HIGHLIGHT-COLOR: #f84358; 
+SCROLLBAR-SHADOW-COLOR: #f84358; 
+SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+SCROLLBAR-ARROW-COLOR: #f84358; 
+SCROLLBAR-TRACK-COLOR: #ffffff; 
+SCROLLBAR-DARKSHADOW-COLOR: #ffffff
+}
+ 
+A:link  {
+ 	color : darkblue;
+ 	text-decoration : underline;
+ 	font-family :  "Arial", sans-serif;FONT-SIZE: 13px;
+ }
+ 
+ A:visited  {
+ 	color :  #7070a0;
+ 	text-decoration : underline;
+ 	font-family :  "Arial", sans-serif;FONT-SIZE: 13px;
+ }
+ 
+ A:hover  {
+ 	color : brown;
+ 	text-decoration : underline;
+ 	font-family :  "Arial", sans-serif;FONT-SIZE: 13px;
+ }
