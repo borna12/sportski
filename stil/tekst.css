@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
   }
 }
+.footer{background-color: #dddcdc}
 .autocomplete-items {
   position: absolute;
   border: 1px solid #d4d4d4;
@@ -20,6 +21,7 @@
   left: 0;
   right: 0;
 }
+
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
@@ -83,10 +85,10 @@
 .navbar-menu{display: block;}
 
 .swal2-html-container, .swal2-html-container{text-align: justify!important;}
-.hero.is-info, .button.is-info{background-color: #683129;}
-.swal2-styled.swal2-confirm{background-color: #683129!important;}
-.button.is-info:hover{background-color:#3a1611}
-.navbar-link:not(.is-arrowless)::after{border-color:#683129}
+.hero.is-info, .button.is-info{background-color: #000000;}
+.swal2-styled.swal2-confirm{background-color: #000000!important;}
+.button.is-info:hover{background-color:#000000}
+.navbar-link:not(.is-arrowless)::after{border-color:#000000}
 
 ul{font-weight: bold;}
 ul a, ul.kazalo{font-weight: normal;}
@@ -101,7 +103,7 @@ ul a, ul.kazalo{font-weight: normal;}
   width: 3em;
   pointer-events: none;
 }
-
+.sakri{display: none!important;}
 .back-to-top-link {
   position: fixed;
   position: sticky;

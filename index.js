@@ -36,6 +36,7 @@ function autocomplete(inp, arr) {
               inp.value = this.getElementsByTagName("input")[0].value;
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
+              document.getElementById('btnSearch').click()
               closeAllLists();
           });
           a.appendChild(b);
@@ -64,6 +65,7 @@ function autocomplete(inp, arr) {
         if (currentFocus > -1) {
           /*and simulate a click on the "active" item:*/
           if (x) x[currentFocus].click();
+          document.getElementById('btnSearch').click()
         }
       }
   });
@@ -102,6 +104,14 @@ autocomplete(document.getElementById("input-search"), natuknice);
 
 
 $(document).ready(function () {
+
+
+  $("#input-search").keyup(function(event) {
+    if (event.keyCode === 13 && $(".autocomplete-items")[0]) {
+        $("#btnSearch").click();
+    }
+});
+
   $('.preloader').hide()
 
     $(".navbar-item.has-dropdown")
@@ -159,6 +169,7 @@ $(document).ready(function () {
             $("#search-results").addClass("stupci")
             resultList.innerHTML = '';
             br=0;
+            $(".back-to-top-wrapper").removeClass( "sakri" )
             if($(this).html()=="A") {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
@@ -211,14 +222,17 @@ $(document).ready(function () {
             })
 
     function search(query) {
+      $(".back-to-top-wrapper").addClass( "sakri" )
       var selector = document.getElementById("odabir");
     //var filter = selector.value;
       // Create a regex for each query
+      
       let regMap = query.toLowerCase().split(' ').filter(function (word) {
         return word.length && !stopWords.includes(word);
       }).map(function (word) {
         return new RegExp(word, 'i');
       });
+      
       //pokušaj
       regMap=regMap.join(" ").replace(/\/i/g,"").replace(/\//g,"")
       // Get and sort the results
