@@ -284,7 +284,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < results.length; i++) {
           var obj = results[i];
-          resultList.innerHTML += "<li><a class='has-tooltip-arrow has-tooltip-multiline' href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+Number(obj.Stranica+14)+".pdf' target='_blank'>" + obj.article.Natuknica + "</a></li>"
+          resultList.innerHTML += "<li><a class='has-tooltip-arrow has-tooltip-multiline' href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+Number(obj.article.Stranica+14)+".pdf' target='_blank'>" + obj.article.Natuknica + "</a></li>"
 
         }
         //results.article.title
