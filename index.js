@@ -219,6 +219,9 @@ $(document).ready(function () {
                   }
               }
               searchStatus.innerHTML = `<p>Broj natuknica: ${br}</p>`;
+              $('html, body').animate({
+                scrollTop: $("#search-status").offset().top
+            }, 100);
             })
 
     function search(query) {
@@ -269,6 +272,7 @@ $(document).ready(function () {
       });
       // Display the results
       showResults(results);
+      
     }
 
     function showResults(results) {
@@ -290,7 +294,9 @@ $(document).ready(function () {
         resultList.innerHTML = '';
       }
 
-
+      $('html, body').animate({
+        scrollTop: $("#search-status").offset().top
+    }, 100);
     }
 
     let stopWords = [',', 'i', 'u', ' ', ':', 'ili', 'ako', 'can', 'cannot', 'can\'t', 'could', 'couldn\'t', 'how', 'is', 'isn\'t', 'it', 'its', 'it\'s', 'that', 'the', 'their', 'there', 'they', 'they\'re', 'them', 'to', 'too', 'us', 'very', 'was', 'we', 'well', 'were', 'what', 'whatever', 'when', 'whenever', 'where', 'with', 'would', 'yet', 'you', 'your', 'yours', 'yourself', 'yourselves', 'the', 'vanilla', 'javascript', 'js'];
