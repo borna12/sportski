@@ -2,6 +2,7 @@
   "dependencies": {
     "@creativebulma/bulma-tooltip": "^1.2.0",
     "bulma": "^0.9.3",
+    "bulma-tooltip": "^3.0.2",
     "markdown-air": "^0.0.4"
   }
 }

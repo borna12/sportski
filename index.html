@@ -2,16 +2,16 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html;">
-  <title>Sportski leksikon – tražilica</title>
+  <title>Sportski leksikon</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Compiled and minified JavaScript -->
   <link rel="stylesheet" href="bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="bulma/css/bulma-tooltip.min.css">
   <link title=style href="stil/tekst.css" type=text/css rel=stylesheet>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://use.fontawesome.com/2d5bc62cc3.js"></script>
 </head>
 <body>
@@ -57,7 +57,7 @@
           <input type="hidden" name="sites" value="http://hrevija.lzmk.hr/">
         </div>
         <div class="control">
-          <button class="button is-info" id="btnSearch">
+          <button class="button is-info js-modal-trigger" id="btnSearch">
             
               <span class="icon">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -80,7 +80,6 @@
 
   <!-- Mirrored from hrevija.lzmk.hr/web/HR/katknj.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 May 2022 16:38:14 GMT -->
 
-
   <footer class="footer">
     <div class="content has-text-centered">
 
@@ -93,6 +92,25 @@
       </p>
     </div>
   </footer>
+  <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+  
+    <div class="modal-content">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <a onclick='copyClipboard(this)' data-tooltip="kopiraj citat" class="has-tooltip-top is-primary">citiraj</a>
+        </footer>
+        <!-- Your content -->
+    </div>
+  
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
 </body>
 <script src="index.js">
  
