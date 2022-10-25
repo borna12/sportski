@@ -490,6 +490,23 @@ $(document).ready(function () {
                     br++;}
                   }
               }
+
+              else if($(this).html()=="Dž") {
+                for (var i = 0; i < searchIndex.length; i++) {
+                    var obj = searchIndex[i];
+                    if (obj.Natuknica.slice(0, 2).toLowerCase()=="dž"){
+                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    br++;}
+                  }
+              }
+              else if($(this).html()=="Đ") {
+                for (var i = 0; i < searchIndex.length; i++) {
+                    var obj = searchIndex[i];
+                    if (obj.Natuknica[0].toLowerCase()=="đ"){
+                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    br++;}
+                  }
+              }
               searchStatus.innerHTML = `<p>Broj natuknica: ${br}</p>`;
               $('html, body').animate({
                 scrollTop: $("#search-status").offset().top
