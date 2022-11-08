@@ -54,10 +54,12 @@ function modal(e){
       closeAllModals();
     }
   });
+  if (e.id=="impresum"){$(".modal-card-title").html("Impresum");$(".modal-card-body").html('<p><strong>Glavni urednik:</strong>&nbsp;Marijan Flander<br /> <strong>Uredni&scaron;tvo:&nbsp;</strong>Radivoj Hudetz (pomoćnik glavnog urednika), Zdenko Jajčević, Jelka Paulić<br /> <strong>Stručni sekretar:</strong>&nbsp;Tatjana Sabol<br /> <strong>Lektori:</strong>&nbsp;Ljiljana Domljan, Marko Kovačević, Branka Peruza-Kru&scaron;ić<br /> <strong>Urednici za ilustracije:</strong>&nbsp;Dubravka Rakoci, Zdenko Jajčević (stručni suradnik)<br /> <strong>Crteži:&nbsp;</strong>Željko Brnetić, Borko Jurin, Nela Krstić<br /> <strong>Grafičko-tehnički urednici:</strong>&nbsp;Vladimir Mesić, Agata Fučkan, Du&scaron;an Žvab<br /> <strong>Korektori:</strong>&nbsp;Ljerka Mlinar, Žarko Anić-Antić, Sanja Petričević, Jasna Rončević<br /> <strong>Korice i ovitak:&nbsp;</strong>Ivan Ga&scaron;pić<br /> <strong>Godina izdanja:</strong>&nbsp;1984</p><p>&nbsp;</p><p><strong>Mrežno izdanje</strong><br /> <strong>Urednice:&nbsp;</strong>Irina Starčević Stančić, Cvijeta Kraus<br /> <strong>Izrada mrežne stranice:&nbsp;</strong>Josip Mihaljević<br /> <strong>Računalni unos podataka:&nbsp;</strong>Suzana Caganić</p><br><p>&copy;2022&nbsp;Leksikografski zavod Miroslav Krleža. Sva prava pridržana.</p>');  $(".modal-card-foot a").html("")}
+  else{
   adresa=window.location.href.split('#vrh')[0]
   broj=Number(e.getAttribute("data-stranica"))
-  $(".modal-card-title").html(e.innerHTML)
-  $(".modal-card-body").html("<a href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+broj+".pdf' target='_blank'><img src='thumbnail/("+e.getAttribute("data-stranica")+").jpg' style='float: left; margin-right:10px; filter: drop-shadow(1px 1px 1px #000);'></a><p>Natuknica: "+e.innerHTML+"</p><p>Stranica: "+ e.getAttribute("data-stranica")+"</p><p><a href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+broj+".pdf' target='_blank'>Vidi PDF...</a></p>")
+  $(".modal-card-title").html(e.innerText)
+  $(".modal-card-body").html("<a href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+broj+".pdf' target='_blank'><img src='thumbnail/("+e.getAttribute("data-stranica")+").jpg' style='float: left; margin-right:10px; filter: drop-shadow(1px 1px 1px #000);'></a><p>Natuknica: "+e.innerText+"</p><p>Stranica: "+ e.getAttribute("data-stranica")+"</p><p><a href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+broj+".pdf' target='_blank'>Vidi PDF...</a></p>")
 
 
   vrijeme = new Date()
@@ -65,7 +67,7 @@ function modal(e){
   t_mjesec = vrijeme.getMonth()+1
   t_dan = vrijeme.getDate()
 
-  $(".modal-card-foot a").html(e.innerHTML+". <en style='font-style: italic;'>Sportski leksikon, mrežno izdanje</en>. Leksikografski zavod Miroslav Krleža, 1984. Pristupljeno " + t_dan + ". " + t_mjesec + ". " + t_godina + ". 	&#60;"+adresa+"stranice/Sportski-"+broj+".pdf&#62;.")
+  $(".modal-card-foot a").html(e.innerText+". <en style='font-style: italic;'>Sportski leksikon, mrežno izdanje</en>. Leksikografski zavod Miroslav Krleža, 1984. Pristupljeno " + t_dan + ". " + t_mjesec + ". " + t_godina + ". 	&#60;"+adresa+"stranice/Sportski-"+broj+".pdf&#62;.")}
 
 }
 
@@ -580,7 +582,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < results.length; i++) {
           var obj = results[i];
-          resultList.innerHTML += "<li class='ikone' style='background-image: url(\"thumbnail/("+obj.article.Stranica+").jpg\")'><a data-target='modal-js-example' class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline' data-target='modal-js-example' data-stranica='"+obj.article.Stranica+"' onclick='modal(this)'  target='_blank'>" + obj.article.Natuknica + "</a></li>"
+          resultList.innerHTML += "<a data-target='modal-js-example' class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline trazen' data-target='modal-js-example' data-stranica='"+obj.article.Stranica+"' onclick='modal(this)'  target='_blank'><li class='ikone' style='background-image: url(\"thumbnail/("+obj.article.Stranica+").jpg\")'>" + obj.article.Natuknica + "</li></a>"
 
         }
         //results.article.title
@@ -627,6 +629,8 @@ $(document).ready(function () {
     $(".is-info").click();
   }
 
+
+  $("#impresum").click()
 
  /* if(window.location.hash) {
     url=decodeURIComponent(window.location.href)
