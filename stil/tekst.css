@@ -94,7 +94,12 @@ ul{font-weight: bold;}
 ul a, ul.kazalo{font-weight: normal;}
 .swal2-title{font-size: 1.6em!important;line-height: 1;}
 
-
+.ikone{    background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  margin: 0;
+  padding: 36px 0 36px 84px;
+  list-style: none;}
 .back-to-top-wrapper {
   position: absolute;
   top: 100vh;
@@ -129,13 +134,16 @@ ul a, ul.kazalo{font-weight: normal;}
   outline: none;
   box-shadow: 0 0 0 3px #4e85c0;
 }
+#search-results{margin-left: 0;}
 
 
 body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: visible !important; overflow:scroll!important}
 
+
+
 #search-results.stupci{    -webkit-columns: 4;
   -moz-columns: 4;
-  columns: 4;}
+  columns: 4;margin-left: 2em;}
 @media screen and (max-width: 1024px) {
  #form-search,#search-results,#search-status{padding: 10px;}
   .back-to-top-link {
@@ -158,11 +166,11 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: v
 
   #search-results.stupci{    -webkit-columns: 3;
     -moz-columns: 3;
-    columns: 3;}
+    columns: 3;margin-left: 2em;}
 }
 
 @media screen and (max-width: 750px) {
   #search-results.stupci{    -webkit-columns: 2;
     -moz-columns: 2;
-    columns: 2;}
+    columns: 2;margin-left: 2em;}
 }

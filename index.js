@@ -245,7 +245,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="a" || obj.Natuknica[0].toLowerCase()=="à" || obj.Natuknica.slice(0, 2).toLowerCase()=="»a"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>"
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>"
                 br++;}
                   }
                  
@@ -254,7 +254,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="b" || obj.Natuknica.slice(0, 2).toLowerCase()=="»b"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -262,7 +262,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="c"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -270,7 +270,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="č" || obj.Natuknica.slice(0, 2).toLowerCase()=="»č" || obj.Natuknica.slice(0, 2).toLowerCase()=="»4"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -278,7 +278,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="ć"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -286,7 +286,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="d" || obj.Natuknica[0].toLowerCase()=="2" || obj.Natuknica.slice(0, 2).toLowerCase()=="»d"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -294,7 +294,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="e"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»e"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -302,7 +302,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="f"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»f"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -310,7 +310,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="g"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»g"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -318,7 +318,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="h"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»h"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -326,7 +326,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="i"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»i"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -334,7 +334,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="j"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»j"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -342,7 +342,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="k"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»k"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -350,7 +350,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="l"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»l"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -358,7 +358,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica.slice(0, 2).toLowerCase()=="lj"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -366,7 +366,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="o"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»o"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -374,7 +374,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="p"  || obj.Natuknica[0].toLowerCase()=="5"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»p"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -382,7 +382,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="r"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»r"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -390,7 +390,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="s"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»s"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -398,7 +398,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="q"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»q"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -406,7 +406,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="s"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»s"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -414,7 +414,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="š"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»š"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -422,7 +422,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="t"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»t" || obj.Natuknica.slice(0, 3).toLowerCase()=="»13"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -430,7 +430,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="u"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»u"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -438,7 +438,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="v"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»v"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -446,7 +446,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="w"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»w"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -454,7 +454,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="y"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»y"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -462,7 +462,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="z"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»z"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -470,7 +470,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="ž"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»ž"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -478,7 +478,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="n"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»n"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -486,7 +486,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="m"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»m"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -495,7 +495,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica.slice(0, 2).toLowerCase()=="dž"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -503,7 +503,7 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica[0].toLowerCase()=="đ"){
-                    resultList.innerHTML += "<li><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
               }
@@ -580,7 +580,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < results.length; i++) {
           var obj = results[i];
-          resultList.innerHTML += "<li><a data-target='modal-js-example' class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline' data-target='modal-js-example' data-stranica='"+obj.article.Stranica+"' onclick='modal(this)'  target='_blank'>" + obj.article.Natuknica + "</a></li>"
+          resultList.innerHTML += "<li class='ikone' style='background-image: url(\"thumbnail/("+obj.article.Stranica+").jpg\")'><a data-target='modal-js-example' class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline' data-target='modal-js-example' data-stranica='"+obj.article.Stranica+"' onclick='modal(this)'  target='_blank'>" + obj.article.Natuknica + "</a></li>"
 
         }
         //results.article.title
