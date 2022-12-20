@@ -59,7 +59,7 @@ function modal(e){
   adresa=window.location.href.split('#vrh')[0]
   broj=Number(e.getAttribute("data-stranica"))
   $(".modal-card-title").html(e.innerText)
-  $(".modal-card-body").html("<a href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+broj+".pdf' target='_blank'><img src='thumbnail/("+e.getAttribute("data-stranica")+").jpg' style='float: left; margin-right:10px; filter: drop-shadow(1px 1px 1px #000);'></a><p>Natuknica: "+e.innerText+"</p><p>Stranica: "+ e.getAttribute("data-stranica")+"</p><p><a href='./web/viewer.html?file="+adresa+"/stranice/Sportski-"+broj+".pdf' target='_blank'>Vidi PDF...</a></p>")
+  $(".modal-card-body").html("<a href='./web/viewer.html?file="+adresa+"/knjiga/Sportski.pdf#page="+(14+broj)+"' target='_blank'><figure><img src='thumbnail/("+e.getAttribute("data-stranica")+").jpg' style='float: left; margin-right:10px; filter: drop-shadow(1px 1px 1px #000);'><figcaption>Vidi PDF...<figcaption></figure></figure></a><p>Natuknica: "+e.innerText+"</p><p>Stranica: "+ e.getAttribute("data-stranica")+"</p>")
 
 
   vrijeme = new Date()

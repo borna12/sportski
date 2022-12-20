@@ -62,7 +62,6 @@
     color:#683129;
     margin-top: 20px;
 }
-
 .title a {float: right;}
 .nested.dropdown:hover > .dropdown-menu {
   display: block;
@@ -81,7 +80,6 @@
   font-weight: 400;
   height: 2em;
 }
-
 .navbar-menu{display: block;}
 
 .swal2-html-container, .swal2-html-container{text-align: justify!important;}
@@ -141,12 +139,18 @@ border-bottom: 1px solid black;
 
 
 body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: visible !important; overflow:scroll!important}
-
-
-
 #search-results.stupci{    -webkit-columns: 4;
   -moz-columns: 4;
   columns: 4;margin-left: 2em;}
+
+  figure {
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+}
+figcaption{text-align: center;}
+
 @media screen and (max-width: 1024px) {
  #form-search,#search-results,#search-status{padding: 10px;}
   .back-to-top-link {
