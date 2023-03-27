@@ -2929,6 +2929,8 @@ dialog :link {
   display: none;
 }
 
+
+
 @media all and (max-width: 900px) {
   #toolbarViewerMiddle {
     display: table;
@@ -2999,3 +3001,6 @@ dialog :link {
     display: none;
   }
 }
+
+
+#openFile, #download, #viewBookmark,#documentProperties{display:none}

@@ -54,7 +54,7 @@ function modal(e){
       closeAllModals();
     }
   });
-  if (e.id=="impresum"){$(".modal-card-title").html("Impresum");$(".modal-card-body").html('<p><strong>SPORTSKI LEKSIKON</strong></p><p>Jednosveščano izdanje Jugoslavenskog leksikografskog zavoda <em>Miroslav Krleža</em>; sadrži osnovne informacije o sportu od A do Ž.<br /> Abecednim redom pruža čitaocu definicije pojmova iz svih pojavnih oblika tjelesnog vježbanja, kao što su: sport, nastava tjelesnog odgoja i sportska rekreacija.<br /> Sadrži i biografske podatke o akterima koji su ostavili znatnijeg traga u razvoju sporta u nas i u svijetu, podatke o međunarodnim i jugoslavenskim sportskim savezima, momčadskim prvacima i kup-pobjednicima Jugoslavije; u dodatku su objavljeni rezultati dobitnika medalja na ljetnim (1896—1980) i zimskim (1924—1980) olimpijskim igrama, abecedni popis jugoslavenskih sudionika na olimpijskim igrama (1912—1980) te pregled razvoja svjetskih rekorda u alpinizmu, atletici, automobilizmu, biciklizmu, brzinskom klizanju, dizanju utega, konjičkom sportu, kuglanju, plivanju, skijanju, streličarstvu, streljaštvu i zrakoplovnim sportovima.<br /> Na preko 120 000 redaka sadrži 11 000 članaka, od toga je 6700 pojmova, 3600 biografskih članaka, 440 članaka o sportskim klubovima i 260 o sportskim savezima; ilustriran je sa 1875 fotografija (835 crno-bijelih i 1040 u boji).</p><p><strong>Glavni urednik:</strong>&nbsp;Marijan Flander<br /> <strong>Uredni&scaron;tvo:&nbsp;</strong>Radivoj Hudetz (pomoćnik glavnog urednika), Zdenko Jajčević, Jelka Paulić<br /> <strong>Stručni sekretar:</strong>&nbsp;Tatjana Sabol<br /> <strong>Lektori:</strong>&nbsp;Ljiljana Domljan, Marko Kovačević, Branka Peruza-Kru&scaron;ić<br /> <strong>Urednici za ilustracije:</strong>&nbsp;Dubravka Rakoci, Zdenko Jajčević (stručni suradnik)<br /> <strong>Crteži:&nbsp;</strong>Željko Brnetić, Borko Jurin, Nela Krstić<br /> <strong>Grafičko-tehnički urednici:</strong>&nbsp;Vladimir Mesić, Agata Fučkan, Du&scaron;an Žvab<br /> <strong>Korektori:</strong>&nbsp;Ljerka Mlinar, Žarko Anić-Antić, Sanja Petričević, Jasna Rončević<br /> <strong>Korice i ovitak:&nbsp;</strong>Ivan Ga&scaron;pić<br /> <strong>Godina izdanja:</strong>&nbsp;1984</p><p>&nbsp;</p><p><strong>Mrežno izdanje</strong><br /> <strong>Urednice:&nbsp;</strong>Irina Starčević Stančić, Cvijeta Kraus<br /> <strong>Izrada mrežne stranice:&nbsp;</strong>Josip Mihaljević<br /> <strong>Računalni unos podataka:&nbsp;</strong>Suzana Caganić</p><br><p>&copy;2022&nbsp;Leksikografski zavod Miroslav Krleža. Sva prava pridržana.</p>');  $(".modal-card-foot a").html("")}
+  if (e.id=="impresum"){$(".modal-card-title").html("Impresum");$(".modal-card-body").html('<p><strong>SPORTSKI LEKSIKON</strong></p><p style="text-align:justify">Ovo jednosve&scaron;čano izdanje <em>Leksikografskoga zavoda Miroslav Krleža </em>sadrži osnovne informacije o sportu od A do Ž. Abecednim redom pruža definicije pojmova iz svih pojavnih oblika tjelesnog vježbanja, kao &scaron;to su: sport, nastava tjelesnog odgoja i sportska rekreacija.<br /> Sadrži i biografske podatke o onima koji su ostavili znatnijeg traga u razvoju sporta u nas i u svijetu, podatke o sportskim savezima, momčadskim prvacima i rezultatima raznih sportskih natjecanja te pregled razvoja svjetskih rekorda u alpinizmu, atletici, automobilizmu, biciklizmu, brzinskom klizanju, dizanju utega, konjičkom sportu, kuglanju, plivanju, skijanju, streličarstvu, strelja&scaron;tvu i zrakoplovnim sportovima.<br /> Sadrži 11 000 članaka, od toga je 6700 pojmova, 3600 biografskih članaka, 440 članaka o sportskim klubovima i 260 o sportskim savezima; ilustriran je sa 1875 fotografija (835 crno-bijelih i 1040 u boji).</p><p><strong>Glavni urednik:</strong>&nbsp;Marijan Flander<br /> <strong>Uredni&scaron;tvo:&nbsp;</strong>Radivoj Hudetz (pomoćnik glavnog urednika), Zdenko Jajčević, Jelka Paulić<br /> <strong>Godina izdanja:</strong>&nbsp;1984</p><p>&nbsp;</p><p><strong>Digitalno izdanje</strong><br /> <strong>Urednice:&nbsp;</strong>Irina Starčević Stančić, Cvijeta Kraus<br /> <strong>Izrada mrežne stranice:&nbsp;</strong>Josip Mihaljević<br /> <strong>Računalni unos podataka:&nbsp;</strong>Suzana Caganić</p><p><br /> </p><p>&copy;2023&nbsp;Leksikografski zavod Miroslav Krleža. Sva prava pridržana.</p>');  $(".modal-card-foot a").html("")}
   else{
   adresa=window.location.href.split('#vrh')[0]
   broj=Number(e.getAttribute("data-stranica"))
@@ -246,7 +246,7 @@ $(document).ready(function () {
             if($(this).html()=="A") {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
-                    if (obj.Natuknica[0].toLowerCase()=="a" || obj.Natuknica[0].toLowerCase()=="à" || obj.Natuknica.slice(0, 2).toLowerCase()=="»a"){
+                    if (obj.Natuknica[0].toLowerCase()=="a" || obj.Natuknica[0].toLowerCase()=="à"  || obj.Natuknica[0].toLowerCase()=="å" || obj.Natuknica.slice(0, 2).toLowerCase()=="»a"){
                     resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>"
                 br++;}
                   }
@@ -287,7 +287,7 @@ $(document).ready(function () {
               else if($(this).html()=="D") {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
-                    if (obj.Natuknica[0].toLowerCase()=="d" || obj.Natuknica[0].toLowerCase()=="2" || obj.Natuknica.slice(0, 2).toLowerCase()=="»d"){
+                    if (obj.Natuknica[0].toLowerCase()=="d" && obj.Natuknica.slice(1, 2).toLowerCase()!="ž" || obj.Natuknica[0].toLowerCase()=="2" || obj.Natuknica.slice(0, 2).toLowerCase()=="»d" && obj.Natuknica.slice(2, 3).toLowerCase()!="ž"){
                     resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
@@ -351,7 +351,7 @@ $(document).ready(function () {
               else if($(this).html()=="L") {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
-                    if (obj.Natuknica[0].toLowerCase()=="l"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»l"){
+                    if (obj.Natuknica[0].toLowerCase()=="l" && obj.Natuknica.slice(1, 2).toLowerCase()!="j" || obj.Natuknica.slice(0, 2).toLowerCase()=="»l" && obj.Natuknica.slice(1, 2).toLowerCase()!="j" ){
                     resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
@@ -360,6 +360,15 @@ $(document).ready(function () {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
                     if (obj.Natuknica.slice(0, 2).toLowerCase()=="lj"){
+                    resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
+                    br++;}
+                  }
+              }
+
+              else if($(this).html()=="Nj") {
+                for (var i = 0; i < searchIndex.length; i++) {
+                    var obj = searchIndex[i];
+                    if (obj.Natuknica.slice(0, 2).toLowerCase()=="nj"){
                     resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
@@ -479,7 +488,7 @@ $(document).ready(function () {
               else if($(this).html()=="N") {
                 for (var i = 0; i < searchIndex.length; i++) {
                     var obj = searchIndex[i];
-                    if (obj.Natuknica[0].toLowerCase()=="n"  || obj.Natuknica.slice(0, 2).toLowerCase()=="»n"){
+                    if (obj.Natuknica[0].toLowerCase()=="n" &&  obj.Natuknica.slice(1, 2).toLowerCase()!="j"|| obj.Natuknica.slice(0, 2).toLowerCase()=="»n" &&  obj.Natuknica.slice(2, 3).toLowerCase()!="j"){
                     resultList.innerHTML += "<li ><a data-target='modal-js-example' data-stranica='"+obj.Stranica+"' onclick='modal(this)'  class='has-tooltip-arrow js-modal-trigger has-tooltip-multiline'  target='_blank'>" + obj.Natuknica + "</a></li>";
                     br++;}
                   }
